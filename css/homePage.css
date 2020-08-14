@@ -1,0 +1,203 @@
+.d_jobs {
+  display: flex;
+  width: 480px;
+}
+.dn_jobs {
+  width: 210px;
+  margin-left: 20px;
+}
+.jd_items {
+  font-size: 13px;
+  color: #808081;
+}
+.jd_items:hover {
+  font-size: 13px;
+  color: blue;
+  cursor: pointer;
+}
+.cantainer {
+    background-color: #fff;
+    padding: 0px 25px;
+    padding-top: 80px;
+    font-family: Montserrat, sans-serif;
+}
+.h_screen {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+}
+.filter {
+  width: 27%;
+  height: auto;
+  background-color: #EDEFF9;
+  position: fixed;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.j_lists {
+  background-color: #fff;
+  width: 70%;
+  float: right;
+  margin-left: 30%;
+}
+.f_title {
+  visibility: visible;
+  line-height: 10px;
+}
+.f_divider {
+  visibility: visible;
+  height: 1px;
+  background-color: #808081;
+  width: 90%;
+  margin: auto;
+}
+.checkbox {
+  color: #808081;
+  margin: 3% 5%;
+  width: 90%;
+  visibility: visible;
+}
+.f_location {
+  color: #202020;
+  width: 90%;
+  margin: 0% 5%;  
+  visibility: visible;
+}
+.j_post {
+  background-color: #EDEFF9;
+  width: 90%;
+  margin: auto;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.j_post_divider {
+  height: 1px;
+  background-color: #808081;
+  width: 95%;
+  margin: auto;
+}
+.c_logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 10px;
+  visibility: visible;
+}
+.ls_logo {
+  visibility: visible;
+  height: auto;
+  width: auto;
+}
+.ss_logo {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+.ss_filter {
+  visibility: hidden;
+}
+.ss_filter:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .d_jobs {
+    width: 100%;
+    display: inline-block;
+    overflow: scroll;
+    max-height: 400px;
+  }
+  .dn_jobs {
+    width: 90%;
+    margin-left: 20px;
+  }
+  .c_logo {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
+  .c_logo1 {
+/*    visibility: hidden;*/
+    height: 0px;
+    width: 0px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .cantainer {
+    background-color: #fff;
+    padding-top: 15px;
+    font-family: Montserrat, sans-serif;
+  }
+  .ls_logo {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+  }
+  .ss_logo {
+  visibility: visible;
+  display: flex;
+  height: auto;
+  width: auto;
+  background-color: #EDEFF9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+  .ss_filter {
+  visibility: visible;
+  }
+  .filter {
+    width: 0px;
+    height: 0px;
+  }
+  .j_lists {
+    background-color: #fff;
+    width: 100%;
+  }
+  .f_title, .f_location {
+    visibility: hidden;
+  }
+  .f_divider, .checkbox {
+    visibility: hidden;
+  }
+}
+
+/*Left Navigation Bar*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  outline: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

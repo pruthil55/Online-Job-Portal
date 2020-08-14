@@ -1,0 +1,259 @@
+body {
+	transition: background-color .5s;
+}
+.d_jobs {
+  display: flex;
+  width: 480px;
+}
+.dn_jobs {
+  width: 210px;
+  margin-left: 20px;
+}
+.jd_items {
+  font-size: 13px;
+  color: #808081;
+}
+.jd_items:hover {
+  font-size: 13px;
+  color: blue;
+  cursor: pointer;
+}
+.cantainer {
+    background-color: #fff;
+    padding: 0px 25px;
+    padding-top: 80px;
+    font-family: Montserrat, sans-serif;
+}
+.p_details, .education {
+	background-color: #EDEFF9;
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+}
+.p_details .fa-edit, .e_details .fa-edit, .e_details .fa-trash {
+	visibility: hidden;
+}
+.p_details:hover .fa-edit, .e_details:hover .fa-edit, .e_details:hover .fa-trash {
+	visibility: visible;
+	cursor: pointer;
+}
+.e_title {
+	font-size: 25px;
+	margin-right: auto;
+}
+.e_details {
+	display: flex;
+}
+.e_details:hover {
+	background-color: #fff;
+	padding: 0px 10px;
+	padding-top: 10px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+.skill {
+	display: flex;
+	width: 45%;
+	background-color: #EDEFF9;
+	padding: 0px 10px;
+	margin: 5px auto;
+}
+.skill:hover {
+	display: flex;
+	width: 45%;
+	background-color: #fff;
+	padding: 0px 10px;
+	margin: 5px auto;
+	cursor: pointer;
+}
+.skill .fa-edit, .skill .fa-trash {
+	visibility: hidden;
+}
+.skill:hover .fa-trash, .skill:hover .fa-edit {
+	visibility: visible;
+	cursor: pointer;
+}
+.pd {
+    width: 100%;
+    margin: 5px auto;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #808081;
+    background-color: transparent;
+}
+.pd:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.pd_fn {
+	margin: auto;
+}
+.se_date {
+	margin: 0px auto;
+	margin-bottom: 20px;
+	width: 45%;
+}
+.ui-datepicker-calendar {
+    display: none;
+}
+.ls_logo {
+	visibility: visible;
+	height: auto;
+	width: auto;
+}
+.ss_logo {
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+.ad-circle {
+	height:5px;
+	width:5px;
+	background-color:#717171;
+	border-radius:5px; 
+	margin-right:5px;
+	margin-top:8px;
+}
+.modal {
+   position: absolute;
+   top: 10px;
+   right: 100px;
+   bottom: 0;
+   left: 0;
+   z-index: 10040;
+   overflow: auto;
+   overflow-y: auto;
+}
+.l_navbar {
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+
+@media only screen and (max-width: 576px) {
+  .d_jobs {
+    width: 100%;
+    display: inline-block;
+    overflow: scroll;
+    max-height: 400px;
+  }
+  .dn_jobs {
+    width: 90%;
+    margin-left: 20px;
+  }
+  .skill {
+	display: flex;
+	width: 90%;
+	background-color: #EDEFF9;
+	padding: 0px 10px;
+	margin: 5px auto;
+  }
+  .skill:hover {
+	display: flex;
+	width: 90%;
+	background-color: #fff;
+	padding: 0px 10px;
+	margin: 5px auto;
+  }
+  .ad-circle {
+	height:5px;
+	width:10px;
+	background-color:#717171;
+	border-radius:5px; 
+	margin-right:5px;
+	margin-top:8px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .cantainer {
+    background-color: #fff;
+    padding: 0px 25px;
+    padding-top: 15px;
+    font-family: Montserrat, sans-serif;
+  }
+  .ls_logo {
+	visibility: hidden;
+	height: 0px;
+	width: 0px;
+  }
+  .ss_logo {
+	visibility: visible;
+	display: flex;
+	height: auto;
+	width: auto;
+	background-color: #EDEFF9;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  }
+  .skill .fa-trash, .skill .fa-edit {
+	visibility: visible;
+  }
+  .skill:hover {
+  	background-color: #EDEFF9;
+  }
+  .p_details .fa-edit, .e_details .fa-edit, .e_details .fa-trash {
+	visibility: visible;
+  }
+  .e_details:hover {
+  	background-color: #EDEFF9;
+  	padding: 0px 0px;
+	padding-top: 0px;
+	border-radius: 0px;
+	margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 482px) {
+  .pd_fn {
+  	margin: auto;
+  	width: 94%;
+  }
+  .se_date {
+	margin: 0px auto;
+	margin-bottom: 20px;
+	width: 90%;
+  }
+}
+
+/*Left Navigation Bar*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  outline: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

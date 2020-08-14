@@ -1,0 +1,157 @@
+.hello{
+    font-family: Ubuntu ;
+    font-weight: normal;
+    font-size: 40px;
+
+}
+.active, .nav_bar:hover {
+  color: white;
+}
+li > a {
+	color: #131313;
+}
+.cantainer {
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+}
+.panel {
+    border: 1px solid #047DFE;
+    border-radius:0;
+    transition: box-shadow 0.5s;
+    margin-top: 10px;
+}
+.panel-body {
+	align-content: center;
+	display: flex;
+  	flex-wrap: wrap;
+}
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid #047DFE;
+    background-color: #fff !important;
+    color: #047DFE;
+}
+.panel-heading {
+    color: #fff !important;
+    background-color: #047DFE;
+    padding: 5%;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.panel-footer {
+    background-color: #fff !important;
+}
+.panel-footer .btn {
+    /*margin: 15px 0;*/
+    background-color: #047DFE;
+    color: #fff;
+    margin-bottom: 10px;
+    padding-bottom: 9px;
+}
+.apply .btn:hover {
+    border: 1px solid #838383;
+    background-color: #fff !important;
+    color: #838383;
+}
+.r_jobs {
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #838383;
+	border-radius: 5px;
+}
+.apply {
+	display: inline-block;
+	margin-left: 35%;
+}
+.c_logo {
+	height: 30px;
+	width: 70px;
+	margin-left: 15%;
+	margin-top: 5px;
+}
+.bg-grey {
+    background-color: #D8D8D8;
+}
+.aboutus{
+	margin-top: 5px;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+.close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.m_footer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+  .panel {
+    border: 1px solid #047DFE;
+    border-radius:0;
+    transition: box-shadow 0.5s;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+  }
+  .r_jobs {
+  	margin-left: 10%;
+  	width: 80%;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #838383;
+	border-radius: 5px;
+  }
+  .apply {
+	display: inline-block;
+	/*margin-left: 35%;*/
+	position: absolute;
+	right: 15%;
+  }
+  .c_logo {
+	height: 30px;
+	width: 70px;
+	margin-top: 5px;
+	position: absolute;
+	right: 15%;
+  }
+  .aboutus {
+  	margin-left: 5%;
+  	margin-right: 5%;
+  }
+}
